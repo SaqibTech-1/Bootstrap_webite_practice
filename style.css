@@ -1,0 +1,154 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1,
+h2 {
+    font-family: "Lora", serif;
+}
+
+.header-img {
+    animation: animate 3s linear infinite;
+    margin-left: 100px;
+}
+
+@media (max-width:1450px) {
+    .header-img {
+        margin-left: 0;
+    }
+
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translate(-11px, 0);
+    }
+
+    50% {
+        transform: translate(-0px, -11px);
+    }
+
+    100% {
+        transform: translate(-11px, 0);
+    }
+}
+
+
+
+
+
+
+.navbar-brand {
+    font-family: "lora", serif;
+}
+
+.header-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.yellow {
+    background-color: #ffd43a;
+    color: #22272e;
+}
+
+.green {
+    background-color: #a1f9f0;
+    color: #000000;
+}
+
+.green-2 {
+    background-color: #00766a;
+    color: #fff;
+}
+
+.yellow:hover {
+    border: 1px solid #ffd43a;
+}
+
+.green:hover {
+    border: 1px solid #000000;
+}
+
+section {
+    scroll-margin: 50px;
+}
+
+.client-img {
+    object-fit: contain;
+    width: 120px;
+    height: 100px;
+    margin: 0 2%;
+}
+
+.client-img:hover {
+    user-select: none;
+    cursor: pointer;
+    /* transform: scale(1.05); */
+}
+
+
+.card-1 {
+    background-color: transparent;
+    color: #3c3a3a;
+    border: 1px solid #ffd43a;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.card-1:hover {
+    background-color: #ffd43a;
+    color: #000000;
+    border: 1px solid black;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+.title {
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+
+
+
+
+
+.portfolio-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+
+.portfolio-img {
+    object-fit: cover;
+    height: 450px;
+    filter: brightness(0.9);
+    transition: .3s ease-in-out;
+}
+
+.portfolio-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 3%;
+    text-align: center;
+}
+
+.portfolio-card .portfolio-img:hover {
+    transform: scale(1.10);
+    transition: .3s;
+}
